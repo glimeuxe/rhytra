@@ -1,0 +1,179 @@
+<html>
+	<head>
+		<title>Astria</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+		<!-- CSS: Assets -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<!-- CSS: Main Stylesheet -->
+		<link rel="stylesheet" href="src/css/index.css" />
+		<link rel="stylesheet" href="src/css/game.css" />
+		<!-- JS: Assets -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+		<script src="https://jeremyckahn.github.io/keydrown/dist/keydrown.min.js"></script>
+	</head>
+	<body>
+		<div id="status-bar">
+			<div>
+				<i class="material-icons status-bar-btn" id="status-bar-home-btn">home</i>
+				<i class="material-icons status-bar-btn" id="status-bar-menu-btn">menu</i>
+			</div>
+		</div>
+		<div id="main-menu">
+			<div class="main-menu-btn" id="main-menu-settings-btn">
+				<i class="material-icons">settings</i>
+				<p>settings (wip)</p>
+			</div>
+			<div class="main-menu-btn" id="main-menu-play-btn"><p>rhytra</p></div>
+			<div class="main-menu-btn" id="main-menu-download-btn">
+				<i class="material-icons">arrow_downward</i>
+				<p>download (wip)</p>
+			</div>
+		</div>
+
+		<!-- Filter Bar -->
+		<div id="filter-bar">
+			<div>
+				<div id="search-bar">
+					<input type="search" id="search" autocomplete="off" placeholder=" type to search..." />
+				</div>
+				<div id="sort-bar">
+					<ul>
+						<li class="sort-bar-blue sort-bar-selected">all</li>
+						<li class="sort-bar-blue">collections</li>
+						<li class="sort-bar-green">BPM</li>
+						<li class="sort-bar-green">date added</li>
+						<li class="sort-bar-green">difficulty</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Left Pane -->
+		<div id="left-pane">
+			<div id="preview-window"></div>
+			<div class="left-pane-section">
+				<span class="left-pane-title">mods</span>
+				<div class="left-pane-container">
+					<div id="mod-faded" class="mod">
+						<img src="src/img/mod-faded.png" />
+						<h2>faded</h2>
+						<p>play with notes that fade on approach!</p>
+					</div>
+					<div id="mod-brisk" class="mod mod-conflicting">
+						<img src="src/img/mod-brisk.png" />
+						<h2>brisk walk</h2>
+						<p>play with notes that approach 2x as fast!</p>
+					</div>
+					<div id="mod-sprint" class="mod mod-conflicting">
+						<img src="src/img/mod-sprint.png" />
+						<h2>sprint</h2>
+						<p>play with notes that approach 3x as fast!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Map List -->
+		<div id="map-list">
+			<ul>
+				<li>
+					<div id="1" class="map">
+						<h1>katawaredoki</h1>
+						<h2>theishter, radwimps</h2>
+						<p>0:57</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Game Window (during game) -->
+		<div id="game-window">
+			<!-- Non-Essential Game Elements -->
+			<div class="dimmer"></div>
+			<div class="timer"></div>
+			<div class="hit-combo"></div>
+			<!-- Essential Game Elements -->
+			<div class="game">
+				<div class="hit"><div class="hit-accuracy"></div></div>
+				<div class="track-container"></div>
+				<div class="key-container">
+					<div class="key key-s key-blue">
+						<div class="key-afterglow key-afterglow-blue"></div>
+						<span>S</span>
+					</div>
+					<div class="key key-d key-red">
+						<div class="key-afterglow key-afterglow-red"></div>
+						<span>D</span>
+					</div>
+					<div class="key key-f key-blue">
+						<div class="key-afterglow key-afterglow-blue"></div>
+						<span>F</span>
+					</div>
+					<div class="key key-space key-orange">
+						<div class="key-afterglow key-afterglow-orange"></div>
+						<span>⎵</span>
+					</div>
+					<div class="key key-j key-blue">
+						<div class="key-afterglow key-afterglow-blue"></div>
+						<span>J</span>
+					</div>
+					<div class="key key-k key-red">
+						<div class="key-afterglow key-afterglow-red"></div>
+						<span>K</span>
+					</div>
+					<div class="key key-l key-blue">
+						<div class="key-afterglow key-afterglow-blue"></div>
+						<span>L</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- Summary (after game) -->
+			<div class="summary">
+				<table>
+					<tr>
+						<td class="score-count" colspan="2">12345</td>
+					</tr>
+					<tr>
+						<td class="accuracy-count">93%</td>
+						<td class="combo-count">23x</td>
+					</tr>
+					<tr>
+						<td class="accuracy-label">ACCURACY</td>
+						<td class="combo-label">COMBO</td>
+					</tr>
+					<tr>
+						<td class="perfect">PERFECT</td>
+						<td><p class="perfect-count">23</p></td>
+					</tr>
+					<tr>
+						<td class="good">GOOD</td>
+						<td class="good-count">55</td>
+					</tr>
+					<tr>
+						<td class="bad">BAD</td>
+						<td class="bad-count">2</td>
+					</tr>
+					<tr>
+						<td class="miss">MISS</td>
+						<td class="miss-count">23</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<audio id="hover-menu"><source src="src/sound/hover-menu.wav" type="audio/wav" /></audio>
+		<audio id="hover-map"><source src="src/sound/hover-map.wav" type="audio/wav" /></audio>
+		<audio id="hover-mod"><source src="src/sound/hover-mod.mp3" type="audio/mp3" /></audio>
+		<audio id="select-mod"><source src="src/sound/select-mod.wav" type="audio/wav" /></audio>
+		<audio id="click-backward"><source src="src/sound/click-backward.mp3" type="audio/mp3" /></audio>
+		<audio id="click-forward"><source src="src/sound/click-forward.mp3" type="audio/mp3" /></audio>
+		<audio id="select-map"><source src="src/sound/select-map.wav" type="audio/wav" /></audio>
+		<audio id="enter-map"><source src="src/sound/enter-map.mp3" type="audio/mp3" /></audio>
+
+		<audio id="map-bgm"></audio>
+		<script src="src/js/index.js"></script>
+		<script src="src/js/sfx.js"></script>
+	</body>
+</html>

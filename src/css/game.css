@@ -32,7 +32,7 @@
 
 .game {
 	position: relative;
-	width: 840px;
+	width: 84rem;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -79,7 +79,7 @@
 /* Keys */
 .key-container {
 	display: flex;
-	height: 100px;
+	height: 10rem;
 	border-top: 1px solid transparent;
 	border-image: linear-gradient(90deg, transparent, white, white, white, transparent);
 	border-image-slice: 1;
@@ -99,7 +99,7 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	font-size: 20px;
+	font-size: 2rem;
 	font-weight: 500;
 }
 
@@ -118,8 +118,8 @@
 .note {
 	position: absolute;
 	width: calc(100% - 10px);
-	height: 1.5rem;
-	top: -1.5rem;
+	height: 1.8rem;
+	top: -1.8rem;
 	background: white;
 	border-radius: 10px;
 	z-index: 1;
@@ -174,9 +174,9 @@
 
 .hit-combo {
 	position: absolute;
-	right: 50px;
-	bottom: 20px;
-	font-size: 28px;
+	right: 5rem;
+	bottom: 2rem;
+	font-size: 2.8rem;
 }
 
 .hit-accuracy {
@@ -190,7 +190,7 @@
 	align-items: center;
 	text-align: center;
 	z-index: 0;
-	font-size: 32px;
+	font-size: 3.2rem;
 }
 
 .hit-accuracy-perfect {
@@ -220,9 +220,9 @@
 .timer {
 	display: none;
 	position: absolute;
-	right: 50px;
-	bottom: 50px;
-	font-size: 28px;
+	right: 5rem;
+	bottom: 5rem;
+	font-size: 2.8rem;
 	transition: all 1s;
 	z-index: 2;
 }
@@ -231,8 +231,8 @@
 	display: none;
 	justify-content: center;
 	align-items: center;
-	width: 480px;
-	height: 480px;
+	width: 48rem;
+	height: 48rem;
 	border-radius: 50%;
 	position: absolute;
 	top: 50%;
@@ -246,23 +246,24 @@
 	table-layout: fixed;
 	width: 100%;
 	text-align: center;
+	font-size: 2rem;
 }
 
 .score-count {
-	font-size: 84px;
+	font-size: 8rem;
 	font-weight: 500;
 }
 
 .accuracy-count,
 .combo-count {
-	font-size: 36px;
+	font-size: 3.2rem;
 	font-weight: 500;
 }
 
 .summary table tr:nth-of-type(3) td {
-	font-size: 12px;
+	font-size: 1.3rem;
 	font-weight: 300;
-	padding-bottom: 40px;
+	padding-bottom: 4rem;
 }
 
 .perfect {

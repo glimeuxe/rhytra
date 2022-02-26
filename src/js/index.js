@@ -1,22 +1,9 @@
-// BGM playing function
-function startBGM(mapID) {
-	if ($(".map").hasClass("map-selected") === false) {
-		audioNew = new Audio();
-		audioNew.crossOrigin = "anonymous";
-		audioNew.muted = false;
-		context = new (window.AudioContext || window.webkitAudioContext)();
-		analyser = context.createAnalyser();
-		audioNew.src = "https://chloeliang.github.io/rhythm-game/media/music.mp3"; // Source path (cannot be local file)
-		source = context.createMediaElementSource(audioNew);
-		source.connect(analyser);
-		analyser.connect(context.destination);
-		frequency_array = new Uint8Array(analyser.frequencyBinCount);
-		audioNew.play();
-	} else {
-		audioNew.src = "";
-		audioNew.play();
+// Direct zoom preventing function
+$(document).keydown(function (event) {
+	if (event.ctrlKey == true && (event.which == "61" || event.which == "107" || event.which == "173" || event.which == "109" || event.which == "187" || event.which == "189")) {
+		event.preventDefault();
 	}
-}
+});
 
 // When main menu play button is clicked,
 $("#main-menu-play-btn").click(function () {

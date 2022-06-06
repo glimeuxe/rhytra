@@ -67,7 +67,9 @@ body {
 }
 
 body {
-	background: url("../img/background-body.jpg") no-repeat center top/cover;
+	background: #111;
+	background-repeat: no-repeat;
+	background-size: cover;
 	overflow: hidden;
 }
 
@@ -210,7 +212,10 @@ body {
 	align-items: center;
 	width: 22rem;
 	height: 22rem;
-	background: #c78283;
+	background: black; /* #c78283 */
+	font-size: 2.4rem;
+	font-weight: 500;
+	color: white;
 	border: 1rem solid white;
 	border-radius: 50%;
 	box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.16), 0 0.3rem 0.6rem rgba(0, 0, 0, 0.23);
@@ -232,15 +237,19 @@ body {
 	z-index: 3;
 }
 
+#main-menu-play-btn img {
+	width: 8.4rem;
+	height: 8.4rem;
+}
+
+/*
 #main-menu-play-btn p {
-	font-size: 2.4rem;
-	font-weight: 500;
-	color: white;
 	letter-spacing: 0.1rem;
 	text-shadow: 0 0.1rem #111;
 	padding: 0;
 	margin: 0;
 }
+*/
 
 #renderer {
 	height: 100rem;

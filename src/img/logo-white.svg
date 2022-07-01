@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><svg id="Icons" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
-	.st0{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-</style><line class="st1" x1="3" x2="29" y1="9" y2="9"/><path fill="#FFFFFF" class="st1" d="M3,9h1.5c2.3,0,4.5-0.8,6.2-2.3l0,0c3.1-2.7,7.6-2.7,10.7,0l0,0C23.1,8.2,25.3,9,27.5,9H29"/><line class="st1" x1="29" x2="3" y1="12.7" y2="12.7"/><path fill="#FFFFFF" class="st1" d="M29,12.7h-1.5c-2.3,0-4.5,0.8-6.2,2.3l0,0c-3.1,2.7-7.6,2.7-10.7,0l0,0c-1.7-1.5-3.9-2.3-6.2-2.3H3"/><line class="st1" x1="16" x2="16" y1="3" y2="4"/><line class="st1" x1="16" x2="16" y1="17" y2="29"/><polyline class="st1" points="10,29 16,24 22,29 "/></svg>
+<?xml version="1.0" ?><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+	<path fill="#FFFFFF"
+		d="M 12 6.59375 L 11.28125 7.28125 L 3.28125 15.28125 L 2.59375 16 L 3.28125 16.71875 L 11.28125 24.71875 L 12 25.40625 L 12.71875 24.71875 L 16.71875 20.71875 L 17.40625 20 L 16.71875 19.28125 L 11.71875 14.28125 L 10.28125 15.71875 L 14.5625 20 L 12 22.5625 L 5.4375 16 L 12 9.4375 L 13.28125 10.71875 L 14.71875 9.28125 L 12.71875 7.28125 Z M 20 6.59375 L 19.28125 7.28125 L 15.28125 11.28125 L 14.59375 12 L 15.28125 12.71875 L 20.28125 17.71875 L 21.71875 16.28125 L 17.4375 12 L 20 9.4375 L 26.5625 16 L 20 22.5625 L 18.71875 21.28125 L 17.28125 22.71875 L 19.28125 24.71875 L 20 25.40625 L 20.71875 24.71875 L 28.71875 16.71875 L 29.40625 16 L 28.71875 15.28125 L 20.71875 7.28125 Z" />
+</svg>
